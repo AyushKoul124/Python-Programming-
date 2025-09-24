@@ -1,0 +1,12 @@
+sentence = input().strip()
+
+words = sentence.split()
+result = []
+
+for w in words:
+    if len(w) % 2 == 0:      # even length -> reverse
+        result.append(w[::-1])
+    else:                    # odd length -> keep as is
+        result.append(w)
+
+print(" ".join(result))
