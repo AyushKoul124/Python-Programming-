@@ -1,0 +1,16 @@
+# Read how many numbers will follow
+n = int(input())
+
+even_sum = 0
+odd_sum = 0
+
+# Read n numbers, one per line
+for _ in range(n):
+    x = int(input())
+    if x % 2 == 0:      # check even
+        even_sum += x
+    else:               # otherwise odd
+        odd_sum += x
+
+print("Even:", even_sum)
+print("Odd:", odd_sum)
