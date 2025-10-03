@@ -1,0 +1,9 @@
+# Input
+s = input()
+
+# Separate uppercase and lowercase letters
+upper = ''.join([c for c in s if c.isupper()])
+lower = ''.join([c for c in s if c.islower()])
+
+# Combine and output
+print(upper + lower)
