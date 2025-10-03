@@ -1,0 +1,15 @@
+# Input
+s = input()
+
+# Check palindrome ignoring spaces and case
+normalized = s.replace(" ", "").lower()
+
+if normalized == normalized[::-1]:
+    print("PAL")
+else:
+    # Swap first and last characters of original string
+    if len(s) == 1:
+        print(s)   # single char stays same
+    else:
+        swapped = s[-1] + s[1:-1] + s[0]
+        print(swapped)
