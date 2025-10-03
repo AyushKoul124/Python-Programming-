@@ -1,0 +1,12 @@
+# Input
+ingredients = input().split(',')
+
+# Process each ingredient
+sorted_ingredients = []
+for item in ingredients:
+    word = item.strip()              # remove spaces
+    sorted_word = ''.join(sorted(word))
+    sorted_ingredients.append(sorted_word)
+
+# Output
+print(','.join(sorted_ingredients))
