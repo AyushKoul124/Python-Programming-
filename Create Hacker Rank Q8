@@ -1,0 +1,8 @@
+# Input
+s = input().split()
+
+# Take first letter of each word and uppercase
+abbr = ''.join(word[0].upper() for word in s)
+
+# Output
+print(abbr)
