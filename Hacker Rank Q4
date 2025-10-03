@@ -1,0 +1,16 @@
+import string
+
+# Input
+text = input().lower()
+
+# All alphabets
+alphabet = set(string.ascii_lowercase)
+
+# Letters present in the text
+present = set(c for c in text if c.isalpha())
+
+# Missing letters
+missing = alphabet - present
+
+# Output: count of missing letters
+print(len(missing))
